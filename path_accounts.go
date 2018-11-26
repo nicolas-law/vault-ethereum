@@ -328,7 +328,7 @@ func (b *EthereumBackend) pathAccountsRead(ctx context.Context, req *logical.Req
 	return &logical.Response{
 		Data: map[string]interface{}{
 			"address":              account.Address,
-			"private_key":			account.PrivateKey
+			"private_key":			account.PrivateKey,
 			"whitelist":            account.Whitelist,
 			"blacklist":            account.Blacklist,
 			"spending_limit_tx":    account.SpendingLimitTx,
